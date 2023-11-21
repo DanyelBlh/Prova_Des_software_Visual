@@ -1,0 +1,21 @@
+@base_url = https://localhost:7015/api/categoria
+
+### Listar Categorias ###
+GET {{base_url}}/listar
+
+### Criar Categoria ###
+POST {{base_url}}/cadastrar
+Content-Type: application/json
+
+{
+    "nome": "Mercado"
+}
+
+### Atualizar Status
+PUT {{base_url}}/alterar/1
+Content-Type: application/json
+
+{
+   "CategoriaId": 1,
+    "Status": ""
+}
